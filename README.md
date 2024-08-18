@@ -16,12 +16,22 @@ https://platform.openai.com/docs/quickstart
 ## Clone
 
 ```bash
-git clone <folder>
-cd <folder> 
+git clone git@github.com:torys877/hintme.git
+cd hintme
 
 ```
 
 ## Build
+
+### Set Data In `.env` File
+
+```bash
+cp example.env .env
+```
+
+Set your API key into `OPENAI_API_KEY` variable in `.env` file
+
+### Build Executable File
 
 ```bash
 cargo build --release

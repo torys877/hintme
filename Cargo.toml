@@ -1,0 +1,12 @@
+[package]
+name = "hintme"
+version = "0.1.0"
+edition = "2021"
+description = "Terminal application suggests the required Linux command on user request using ChatGPT API."
+
+[dependencies]
+dotenv = "0.15.0"
+reqwest = { version = "0.12.5", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
